@@ -11,7 +11,17 @@
     border-radius: 100%;
     margin-bottom: 16px;
 
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
     
+    animation: pulse 1500ms infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: #f3cfa4 0 0 0 0;
+    }
+    75% {
+        box-shadow: #fca63e 0 0 0 2px;
+    }
 }
