@@ -1,0 +1,17 @@
+.cartImg {
+    width: 35px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.amountCart {
+    padding-inline: 6px;
+    padding-block: 1px;
+    background-color: bisque  ;
+    border-radius: 100%;
+    margin-bottom: 16px;
+
+    font-size: 12px;
+    font-weight: 600;
+    
+}
