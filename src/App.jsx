@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import MiNav from './components/NavBar'
-import './components/NavBar.css'
 import ItemListContainer from './components/ItemListContainer'
+import MiNav from './components/nav/NavBar';
 
 
 function App() {

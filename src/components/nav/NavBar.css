@@ -6,10 +6,11 @@
 
 .amountCart {
     padding-inline: 6px;
-    padding-block: 1px;
+    padding-block: 2px;
     background-color: bisque  ;
-    border-radius: 100%;
+    border-radius: 50%;
     margin-bottom: 16px;
+    color: brown;
 
     font-size: 10px;
     font-weight: 600;
@@ -19,9 +20,12 @@
 
 @keyframes pulse {
     0% {
-        box-shadow: #f3cfa4 0 0 0 0;
+        box-shadow: bisque 0 0 0 0;
     }
     75% {
-        box-shadow: #fca63e 0 0 0 2px;
+        box-shadow: #f89e31 0 0 0 1px;
     }
 }
+
+
+
