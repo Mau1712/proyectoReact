@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import cartSop from '../../assets/img/cartSop.png';
+import './boxCart.css'
 
 function BoxCart() {
   const [show, setShow] = useState(false);
@@ -10,17 +12,17 @@ function BoxCart() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch
+
+      <Button variant="link" className="btn-unstyled btnOpenBoxCart" onClick={handleShow}>
+      <img className='cartImg' src={cartSop} alt="" />
       </Button>
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>Bolsa de compras</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+          AQUI SE MUESTRAN LOS ARTICULOS QUE SE AGREGUEN EN EL CARRO DE COMPRAS
         </Offcanvas.Body>
       </Offcanvas>
     </>
