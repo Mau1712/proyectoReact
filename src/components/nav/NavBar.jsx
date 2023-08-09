@@ -4,13 +4,14 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import cartSop from '../assets/img/cartSop.png';
+import cartSop from '../../assets/img/cartSop.png';
 import CartWidget from '../CartWidget';
+import './NavBar.css'
 
 
 
 function MiNav() {
-
+    
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container fluid>
@@ -33,25 +34,27 @@ function MiNav() {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action3">Disco duro</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Tarjetas de video</NavDropdown.Item> 
+                            <NavDropdown.Item href="#action3">Tarjetas de video</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action3">Tarjetas LAN</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Interfaz de Audio</NavDropdown.Item> 
+                            <NavDropdown.Item href="#action3">Interfaz de Audio</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Fuentes de poder</NavDropdown.Item> 
+                            <NavDropdown.Item href="#action3">Fuentes de poder</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Monitores</NavDropdown.Item> 
+                            <NavDropdown.Item href="#action3">Monitores</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Teclados</NavDropdown.Item> 
+                            <NavDropdown.Item href="#action3">Teclados</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action3">Mouse</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Accesorios</NavDropdown.Item>                       
+                            <NavDropdown.Item href="#action3">Accesorios</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <CartWidget amount={5}/>
-                    <a href=""><img className='cartImg' src={cartSop} alt="" /></a>
+                    <CartWidget amount={5} />
+                    <a href=""   >
+                        <img className='cartImg' src={cartSop} alt="" />
+                    </a>
                     <Form className="d-flex">
                         <Form.Control
                             type="search"
@@ -63,10 +66,15 @@ function MiNav() {
                     </Form>
                 </Navbar.Collapse>
             </Container>
+            
         </Navbar>
     );
+
 }
 
+
+
+  
 export default MiNav;
 
 
