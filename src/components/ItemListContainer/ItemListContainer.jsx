@@ -8,7 +8,6 @@ const ItemListContainer = (props) => {
         <h2 className='productsTittle'>PRODUCTOS</h2>
 
         <Container className='productsContainer'>
-            
         {props.children}
         </Container>
         

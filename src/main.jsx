@@ -5,6 +5,7 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import CardInfoContainer from './components/CardInfo/CardInfo.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -13,10 +14,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route exact path="/" element={<App />} />
         <Route exact path="/ItemListContainer" element={<ItemListContainer />} />
-        
+        <Route exact path="/Producto" element={<CardInfoContainer />} />
       </Routes>
     </BrowserRouter></>
 
+    
     
   </React.StrictMode>,
 )
