@@ -8,14 +8,14 @@ import CartWidget from '../CartWidget';
 import './NavBar.css'
 import BoxCart from '../CartContainer/boxCart';
 
-
+const categorias = ["Velas de soja", "Velas de molde", "Hornillos", "Difusores y accesorios"]
 
 function MiNav() {
     
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container fluid>
-                <Navbar.Brand href="#">TECHBOX</Navbar.Brand>
+                <Navbar.Brand href="/">CALM CANDLES</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -26,29 +26,13 @@ function MiNav() {
                         <Nav.Link href="#action1">¿Quiénes Somos?</Nav.Link>
                         <Nav.Link href="#action2">Sucursales</Nav.Link>
                         <NavDropdown title="Categorías" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#action3">Mother Board</NavDropdown.Item>
+                            <NavDropdown.Item href="#action3">Velas de soja</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Procesadores</NavDropdown.Item>
+                            <NavDropdown.Item href="#action3">Velas de molde</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Memorias RAM</NavDropdown.Item>
+                            <NavDropdown.Item href="#action3">Hornillos</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Disco duro</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Tarjetas de video</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Tarjetas LAN</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Interfaz de Audio</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Fuentes de poder</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Monitores</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Teclados</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Mouse</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action3">Accesorios</NavDropdown.Item>
+                            <NavDropdown.Item href="#action3">Difusores y accesorios</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <CartWidget amount={5} />
