@@ -3,23 +3,29 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import CardInfoContainer from './components/CardInfo/CardInfo.jsx';
+
+import { CartContext } from './Context/CartContext.jsx';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.jsx';
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+
+
+
   <React.StrictMode>
-    <><BrowserRouter>
+    <>
+    <CartContext.Provider value={[]}>
+    <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<App />} />
-        <Route exact path="/ItemListContainer" element={<ItemListContainer />} />
-        <Route exact path="/Producto" element={<CardInfoContainer />} />
-      </Routes>
-    </BrowserRouter></>
+        <Route path="/detalle/:id" component={ItemDetailContainer} />
 
-    
-    
+      </Routes>
+    </BrowserRouter>
+    </CartContext.Provider>
+    </>
   </React.StrictMode>,
 )
 
