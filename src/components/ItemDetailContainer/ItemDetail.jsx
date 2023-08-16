@@ -1,23 +1,31 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import './ItemDetail.css'; // Importa tus estilos si los tienes
+import './ItemDetail.css';
 
 const ItemDetail = ({ product }) => {
-  return (
-    <Container className='item-detail-container'>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={product.imagen} />
-        <Card.Body>
-          <Card.Title>{product.Titulo}</Card.Title>
-          <Card.Text>Precio: $ {product.Precio} </Card.Text>
-          <Card.Text>Categoria: {product.categoria}  </Card.Text>
-          <Card.Text>Detalle: {product.Detalle}</Card.Text>
-          {/* Agrega más detalles específicos del producto aquí */}
-        </Card.Body>
-      </Card>
-    </Container>
-  );
-}
+
+    return (
+        <Container className='item-detail-container'>
+            <Card className="text-center cardDetails">
+                <Card.Header>Producto</Card.Header>
+                {/* <Card.Img className='imgDetailCard'  variant="top" src={product.imagen} /> */}
+                <Card.Body>
+                    <Card.Title>{product.Titulo}</Card.Title>
+                    <Card.Text>{product.Detalle}</Card.Text>
+                    <Card.Text>Aromas: {product.Aromas}</Card.Text>
+                    <Card.Text>Tipo: {product.categoria}</Card.Text>
+                    <Card.Text>Precio: $ {product.Precio}</Card.Text>
+
+                    <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+                <Card.Footer className="text-muted">2 days ago</Card.Footer>
+            </Card>
+        </Container>
+    );
+};
 
 export default ItemDetail;
+
+{/*  */}

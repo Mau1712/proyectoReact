@@ -12,11 +12,13 @@
 
 }
 
-.cardButton {
+.cardButtons Button {
     background-color: #ff4800da  !important;
     color: white !important;
+    
+    width: 120px;
 
-    width: 45%;
+      
 }
 
 .cardButton:hover {

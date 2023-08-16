@@ -17,7 +17,8 @@ const Item = ({ product }) => {
 
           <div className='cardButtons'>
             <Button className='cardButton' variant="">Agregar</Button>
-            <Link to={`/detalle/${product.id}`}>
+            
+            <Link to={`/item/${product.id}`}>
               <Button className='cardButton' variant="">Detalles</Button>
             </Link>
           </div>
