@@ -31,8 +31,7 @@ function MiNav() {
                                 <NavDropdown.Item
                                     key={categoria}
                                     as={Link}
-                                    to={`/categoria/${categoria}`}
-                                >
+                                    to={`/categoria/${categoria}`}>
                                     {categoria}
                                 </NavDropdown.Item>
                             ))}
