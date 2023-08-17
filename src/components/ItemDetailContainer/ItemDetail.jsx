@@ -18,7 +18,7 @@ const ItemDetail = ({ product }) => {
                     <Card.Text>Tipo: {product.categoria}</Card.Text>
                     <Card.Text>Precio: $ {product.Precio}</Card.Text>
 
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">Comprar</Button>
                 </Card.Body>
                 <Card.Footer className="text-muted">2 days ago</Card.Footer>
             </Card>

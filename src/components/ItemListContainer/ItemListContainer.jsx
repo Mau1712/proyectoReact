@@ -13,7 +13,7 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch('productsBD.json')
+      fetch('/productsBD.json')
         .then((res) => res.json())
         .then((data) => setProductList(data))
         .catch((error) => console.error(error))
