@@ -205,6 +205,17 @@
         "categoria": "Difusores y accesorios",
         "Tipo": "DA",
         "id": "019"
+    },
+
+    {
+        "imagen": "https://picsum.photos/200/200?random=19",
+        "Titulo": "Mini Cactus",
+        "Precio": 1500,
+        "Detalle": "Bubbles aromaticas y decorativas",
+        "Aromas": "Lavanda, flores blancas, jazmín, vainicoco, coco, almendra, canela naranja, vainilla, citronela, limón, maracuya, pera.",
+        "categoria": "Vela de molde",
+        "Tipo": "VM",
+        "id": "020"
     }
     
 ]

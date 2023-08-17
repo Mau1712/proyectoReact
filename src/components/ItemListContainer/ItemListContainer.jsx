@@ -35,7 +35,7 @@ const ItemListContainer = () => {
   return (
     <Container className='productsSection'>
       <Container className='productsContainer'>
-        {loading ? (<Loader />) : (loadingFilter ? (<Loader />) : (<ItemList products={filteredProducts} />))}
+      {loading || loadingFilter ? <Loader /> : <ItemList products={filteredProducts} />}
       </Container>
     </Container>
   );
